@@ -1,1 +1,33 @@
 
+class AdultUser {
+    int age;
+
+    void registerAccount() {
+        if (age >= 18)
+            System.out.println("Registration Successful");
+        else
+            System.out.println("Registration Failed for AdultUser");
+    }
+
+    void requestBook(String bookType) {
+        if (age >= 18) {
+            System.out.println(bookType + " book requested successfully");
+        } else {
+            System.out.println("Not eligible to request books");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        AdultUser u1 = new AdultUser();
+        u1.age = 5;
+        u1.registerAccount();
+        u1.requestBook("Kids");
+
+        AdultUser u2 = new AdultUser();
+        u2.age = 23;
+        u2.registerAccount();
+        u2.requestBook("Kids");
+        u2.requestBook("Fiction");
+    }
+}

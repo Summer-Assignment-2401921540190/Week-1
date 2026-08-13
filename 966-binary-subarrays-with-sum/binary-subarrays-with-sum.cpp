@@ -14,7 +14,8 @@ public:
             prefixSum += nums[i];
             
             if (m.count(prefixSum - goal)) {
-                total += m[prefixSum - goal];
+                total += m[prefixSum-goal];
+               
             }
             
             // Always update current prefix sum

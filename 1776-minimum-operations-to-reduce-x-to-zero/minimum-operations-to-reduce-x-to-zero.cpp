@@ -9,8 +9,9 @@ public:
 
         int target = totalSum - x;
 
-        if (target < 0) return -1;
+     if (target < 0) return -1;
         if (target == 0) return nums.size();
+
 
         int left = 0;
         int sum = 0;
